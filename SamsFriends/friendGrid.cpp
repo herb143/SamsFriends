@@ -44,16 +44,6 @@ friendGrid::friendGrid()
     
 }
 
-inline int friendGrid::getArrayX(int nGridX)
-{
-    return nGridX - m_nOriginX;
-}
-
-inline int friendGrid::getArrayY(int nGridY)
-{
-    return nGridY - m_nOriginY;
-}
-
 inline int friendGrid::getGridX(int nArrayX)
 {
     return nArrayX - m_nOriginX;

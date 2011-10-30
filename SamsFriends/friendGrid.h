@@ -16,8 +16,6 @@ private:
     int m_nOriginX;
     int m_nOriginY;
     
-    inline int getArrayX(int nGridX);
-    inline int getArrayY(int nGridY);
     inline int getGridX(int nArrayX);
     inline int getGridY(int nArrayY);
     
