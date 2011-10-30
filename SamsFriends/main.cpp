@@ -13,7 +13,6 @@
 #include "numberFunctions.h"
 #include "EuclideanLine.h"
 #include "gcdCalculation.h"
-#include "slopeFraction.h"
 #include "personInGrid.h"
 #include "friendGrid.h"
 
