@@ -13,8 +13,10 @@
 
 slopeFraction::slopeFraction() // Default constructor -- WE DON'T WANT THIS
 {
-    std::cerr << "Error: Slope fraction constructed without proper values!" << std::endl;
+    std::cerr << "Error! Slope fraction constructed improperly!" << std::endl;
+    
     exit(1);
+
 }
 
 slopeFraction::slopeFraction(int nAX, int nBX, int nAY, int nBY)
@@ -51,6 +53,7 @@ slopeFraction::slopeFraction(int nAX, int nBX, int nAY, int nBY)
         if (theGCD != 1) // If we can simplifty...
         {
             m_bSimplestForm = false;
+            
         }
         else
         {

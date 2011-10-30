@@ -20,8 +20,10 @@
 int main (int argc, const char * argv[])
 {
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    friendGrid myGrid = friendGrid();
+    myGrid.prettyPrint();
+    
+  //  personInGrid myPerson = personInGrid(20, 77);
     return 0;
 }
 

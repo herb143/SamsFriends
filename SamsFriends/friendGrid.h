@@ -8,6 +8,25 @@
 #ifndef SamsFriends_friendGrid_h
 #define SamsFriends_friendGrid_h
 
-
+class friendGrid
+{
+private:
+    int m_nWidth; // The width and length of the grid.
+    int m_nLength;
+    int m_nOriginX;
+    int m_nOriginY;
+    
+    inline int getArrayX(int nGridX);
+    inline int getArrayY(int nGridY);
+    inline int getGridX(int nArrayX);
+    inline int getGridY(int nArrayY);
+    
+    personInGrid ***m_personArray;    
+public:
+    friendGrid(); // Constructor with arraysize.
+    ~friendGrid(); // Destructor.
+    
+    void prettyPrint();
+};
 
 #endif
