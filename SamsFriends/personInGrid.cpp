@@ -6,3 +6,8 @@
  */
 
 #include <iostream>
+#include "numberFunctions.h"
+#include "EuclideanLine.h"
+#include "gcdCalculation.h"
+#include "personInGrid.h"
+
