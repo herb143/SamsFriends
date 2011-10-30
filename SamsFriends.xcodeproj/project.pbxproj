@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		E1AE0C78145DD90B00C5DB44 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1AE0C77145DD90B00C5DB44 /* main.cpp */; };
 		E1AE0C7A145DD90B00C5DB44 /* SamsFriends.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1AE0C79145DD90B00C5DB44 /* SamsFriends.1 */; };
+		E1FCB6DE145DDA1E00B311B1 /* numberFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1FCB6DD145DDA1E00B311B1 /* numberFunctions.cpp */; };
+		E1FCB6E0145DDA2800B311B1 /* EuclideanLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1FCB6DF145DDA2800B311B1 /* EuclideanLine.cpp */; };
+		E1FCB6E4145DDA4200B311B1 /* argFunctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1FCB6E3145DDA4200B311B1 /* argFunctions.cpp */; };
+		E1FCB6E6145DDA4900B311B1 /* gcdCalculation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1FCB6E5145DDA4900B311B1 /* gcdCalculation.cpp */; };
+		E1FCB6E9145DDAFE00B311B1 /* friendGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1FCB6E8145DDAFE00B311B1 /* friendGrid.cpp */; };
+		E1FCB6F0145DDB7500B311B1 /* personInGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1FCB6EF145DDB7500B311B1 /* personInGrid.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +34,18 @@
 		E1AE0C73145DD90B00C5DB44 /* SamsFriends */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SamsFriends; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1AE0C77145DD90B00C5DB44 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E1AE0C79145DD90B00C5DB44 /* SamsFriends.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SamsFriends.1; sourceTree = "<group>"; };
+		E1FCB6DB145DDA1600B311B1 /* numberFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = numberFunctions.h; sourceTree = "<group>"; };
+		E1FCB6DD145DDA1E00B311B1 /* numberFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = numberFunctions.cpp; sourceTree = "<group>"; };
+		E1FCB6DF145DDA2800B311B1 /* EuclideanLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EuclideanLine.cpp; sourceTree = "<group>"; };
+		E1FCB6E1145DDA2D00B311B1 /* EuclideanLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EuclideanLine.h; sourceTree = "<group>"; };
+		E1FCB6E2145DDA3800B311B1 /* argFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = argFunctions.h; sourceTree = "<group>"; };
+		E1FCB6E3145DDA4200B311B1 /* argFunctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = argFunctions.cpp; sourceTree = "<group>"; };
+		E1FCB6E5145DDA4900B311B1 /* gcdCalculation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gcdCalculation.cpp; sourceTree = "<group>"; };
+		E1FCB6E7145DDA4E00B311B1 /* gcdCalculation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gcdCalculation.h; sourceTree = "<group>"; };
+		E1FCB6E8145DDAFE00B311B1 /* friendGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = friendGrid.cpp; sourceTree = "<group>"; };
+		E1FCB6EA145DDB2100B311B1 /* friendGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = friendGrid.h; sourceTree = "<group>"; };
+		E1FCB6EF145DDB7500B311B1 /* personInGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = personInGrid.cpp; sourceTree = "<group>"; };
+		E1FCB6F1145DDB8C00B311B1 /* personInGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personInGrid.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +80,18 @@
 			children = (
 				E1AE0C77145DD90B00C5DB44 /* main.cpp */,
 				E1AE0C79145DD90B00C5DB44 /* SamsFriends.1 */,
+				E1FCB6EF145DDB7500B311B1 /* personInGrid.cpp */,
+				E1FCB6F1145DDB8C00B311B1 /* personInGrid.h */,
+				E1FCB6E2145DDA3800B311B1 /* argFunctions.h */,
+				E1FCB6E5145DDA4900B311B1 /* gcdCalculation.cpp */,
+				E1FCB6DD145DDA1E00B311B1 /* numberFunctions.cpp */,
+				E1FCB6E8145DDAFE00B311B1 /* friendGrid.cpp */,
+				E1FCB6EA145DDB2100B311B1 /* friendGrid.h */,
+				E1FCB6E3145DDA4200B311B1 /* argFunctions.cpp */,
+				E1FCB6E1145DDA2D00B311B1 /* EuclideanLine.h */,
+				E1FCB6E7145DDA4E00B311B1 /* gcdCalculation.h */,
+				E1FCB6DB145DDA1600B311B1 /* numberFunctions.h */,
+				E1FCB6DF145DDA2800B311B1 /* EuclideanLine.cpp */,
 			);
 			path = SamsFriends;
 			sourceTree = "<group>";
@@ -114,6 +144,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1AE0C78145DD90B00C5DB44 /* main.cpp in Sources */,
+				E1FCB6DE145DDA1E00B311B1 /* numberFunctions.cpp in Sources */,
+				E1FCB6E0145DDA2800B311B1 /* EuclideanLine.cpp in Sources */,
+				E1FCB6E4145DDA4200B311B1 /* argFunctions.cpp in Sources */,
+				E1FCB6E6145DDA4900B311B1 /* gcdCalculation.cpp in Sources */,
+				E1FCB6E9145DDAFE00B311B1 /* friendGrid.cpp in Sources */,
+				E1FCB6F0145DDB7500B311B1 /* personInGrid.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +234,7 @@
 				E1AE0C7F145DD90B00C5DB44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
