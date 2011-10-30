@@ -9,7 +9,6 @@
 #include "numberFunctions.h"
 #include "EuclideanLine.h"
 #include "gcdCalculation.h"
-#include "personInGrid.h"
 #include "slopeFraction.h"
 
 slopeFraction::slopeFraction() // Default constructor -- WE DON'T WANT THIS
@@ -31,13 +30,14 @@ slopeFraction::slopeFraction(int nAX, int nBX, int nAY, int nBY)
     if (nTempDenominator == 0) // If we have a 0 denomenator...
     {
         m_bInfinite = true; // It is infinite.
-        m_bSimplestForm = true; // You can't simplify that.
+        if (nTempNumerator == 1 || nTempNumerator == -1) { m_bSimplestForm = true; } // This isn't completely correct, but it works here.
+        else { m_bSimplestForm = false; }
     }
     else if (nTempNumerator == 0)
     {
         m_bInfinite = false; // It's not infinite.
-        nTempDenominator = 0; // And our denominator is 0;
-        m_bSimplestForm = true; // And we cannot simplify.
+        if (nTempDenominator == 1 || nTempDenominator == -1) { m_bSimplestForm = true; } // This isn't completely correct, but it works here.
+        else { m_bSimplestForm = false; }
         
     }
     else if (nTempNumerator < 0 && nTempDenominator < 0) // If both are negative, make them positive.
@@ -96,16 +96,17 @@ slopeFraction::slopeFraction(int nAX, int nBX, int nAY, int nBY)
     m_nNumeratorUnsimp = nTempNumerator;
     m_nDenominatorUnsimp = nTempDenominator;
     
-    if (m_bSimplestForm) // If you can't simplify.
-    {
-        m_nDenominatorSimp = m_nDenominatorUnsimp;
-        m_nNumeratorSimp = m_nNumeratorUnsimp;
-    }
-    else // If you can...
+    if (!m_bSimplestForm && m_nNumeratorUnsimp != 0 && m_nDenominatorUnsimp != 0) // If you can simplify and it's not messing with 0's (my GCD function wasn't designed for that).
     {
         int theGCD = gcdCalculation(nTempNumerator, nTempDenominator).getGCD();
         m_nNumeratorSimp = m_nNumeratorUnsimp / theGCD;
         m_nDenominatorSimp = m_nDenominatorUnsimp / theGCD;
+
+    }
+    else // If you cannot
+    {
+        m_nDenominatorSimp = m_nDenominatorUnsimp;
+        m_nNumeratorSimp = m_nNumeratorUnsimp;
     }
     
 }
