@@ -15,7 +15,6 @@
 		E1FCB6E6145DDA4900B311B1 /* gcdCalculation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1FCB6E5145DDA4900B311B1 /* gcdCalculation.cpp */; };
 		E1FCB6E9145DDAFE00B311B1 /* friendGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1FCB6E8145DDAFE00B311B1 /* friendGrid.cpp */; };
 		E1FCB6F0145DDB7500B311B1 /* personInGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1FCB6EF145DDB7500B311B1 /* personInGrid.cpp */; };
-		E1FCB6F3145DDCE900B311B1 /* slopeFraction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1FCB6F2145DDCE900B311B1 /* slopeFraction.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,8 +46,6 @@
 		E1FCB6EA145DDB2100B311B1 /* friendGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = friendGrid.h; sourceTree = "<group>"; };
 		E1FCB6EF145DDB7500B311B1 /* personInGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = personInGrid.cpp; sourceTree = "<group>"; };
 		E1FCB6F1145DDB8C00B311B1 /* personInGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personInGrid.h; sourceTree = "<group>"; };
-		E1FCB6F2145DDCE900B311B1 /* slopeFraction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = slopeFraction.cpp; sourceTree = "<group>"; };
-		E1FCB6F4145DDCF600B311B1 /* slopeFraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slopeFraction.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +82,6 @@
 				E1AE0C79145DD90B00C5DB44 /* SamsFriends.1 */,
 				E1FCB6EF145DDB7500B311B1 /* personInGrid.cpp */,
 				E1FCB6F1145DDB8C00B311B1 /* personInGrid.h */,
-				E1FCB6F2145DDCE900B311B1 /* slopeFraction.cpp */,
-				E1FCB6F4145DDCF600B311B1 /* slopeFraction.h */,
 				E1FCB6E2145DDA3800B311B1 /* argFunctions.h */,
 				E1FCB6E5145DDA4900B311B1 /* gcdCalculation.cpp */,
 				E1FCB6DD145DDA1E00B311B1 /* numberFunctions.cpp */,
@@ -155,7 +150,6 @@
 				E1FCB6E6145DDA4900B311B1 /* gcdCalculation.cpp in Sources */,
 				E1FCB6E9145DDAFE00B311B1 /* friendGrid.cpp in Sources */,
 				E1FCB6F0145DDB7500B311B1 /* personInGrid.cpp in Sources */,
-				E1FCB6F3145DDCE900B311B1 /* slopeFraction.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
