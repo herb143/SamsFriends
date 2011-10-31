@@ -24,7 +24,7 @@ public:
     friendGrid(); // Constructor with arraysize.
     ~friendGrid(); // Destructor.
     
-    void prettyPrint();
+    Magick::Image prettyPrint();
 };
 
 #endif

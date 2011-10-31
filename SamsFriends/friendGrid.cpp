@@ -6,6 +6,7 @@
  */
 
 #include <iostream>
+#include "Magick++.h"
 #include "numberFunctions.h"
 #include "EuclideanLine.h"
 #include "gcdCalculation.h"
@@ -65,8 +66,9 @@ friendGrid::~friendGrid() // Destructor.
     m_personArray = 0; // Set the array to null, just in case.
 }
 
-void friendGrid::prettyPrint()
+Magick::Image friendGrid::prettyPrint()
 {
+    Magick::Image empty_image(Magick::Geometry(m_nWidth, m_nLength), "white");
     for (int iii = 0; iii < m_nLength; iii++) // For every row...
     {
         for (int bbb = 0; bbb < m_nWidth; bbb++) // For every item in that row...
@@ -77,15 +79,17 @@ void friendGrid::prettyPrint()
             } */
             if ((*m_personArray[iii][bbb]).getX() == 0 && (*m_personArray[iii][bbb]).getY() == 0) // If it's sam...
             {
-                std::cout << "\033[1;42mS\033[0m";
+            //    std::cout << "\033[1;42mS\033[0m"; 
+                empty_image.pixelColor(bbb,iii,Magick::Color("red"));
             }
             else if ((*m_personArray[iii][bbb]).canSeeSam()) // If they can see Sam...
             {
-                std::cout << "\033[1;42m \033[0m";
+              //  std::cout << "\033[1;42m \033[0m";
+                 empty_image.pixelColor(bbb,iii,Magick::Color("green"));
             }
             else
             {
-                std::cout << "\033[1;44m \033[0m";
+                 empty_image.pixelColor(bbb,iii,Magick::Color("blue"));
             }
             if (bbb == m_nWidth - 1) // If it's last in the row...
             {
@@ -93,4 +97,6 @@ void friendGrid::prettyPrint()
             }
         }
     }
+ //   empty_image.zoom(Magick::Geometry(20*m_nWidth, 20*m_nLength));
+    return empty_image;
 }

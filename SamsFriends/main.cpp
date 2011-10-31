@@ -8,7 +8,7 @@
  *
  */
 #include <iostream>
-#include <stdlib.h>
+#include "Magick++.h"
 #include "argFunctions.h"
 #include "numberFunctions.h"
 #include "EuclideanLine.h"
@@ -19,10 +19,11 @@
 int main (int argc, const char * argv[])
 {
 
-    friendGrid myGrid = friendGrid();
-    myGrid.prettyPrint();
     
-  //  personInGrid myPerson = personInGrid(20, 77);
+    
+    friendGrid myGrid = friendGrid();
+    Magick::Image prettyPrinted = myGrid.prettyPrint();
+    prettyPrinted.magick("png");
+    prettyPrinted.write("Output");
     return 0;
 }
-
