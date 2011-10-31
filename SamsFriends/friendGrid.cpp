@@ -73,30 +73,19 @@ Magick::Image friendGrid::prettyPrint()
     {
         for (int bbb = 0; bbb < m_nWidth; bbb++) // For every item in that row...
         {
-          /*  if (((*m_personArray[iii][bbb]).getX() == -1) && ((*m_personArray[iii][bbb]).getY() == -1))
-            {
-                std::cout << "WE GOT IT" << std::endl;
-            } */
             if ((*m_personArray[iii][bbb]).getX() == 0 && (*m_personArray[iii][bbb]).getY() == 0) // If it's sam...
             {
-            //    std::cout << "\033[1;42mS\033[0m"; 
                 empty_image.pixelColor(bbb,iii,Magick::Color("red"));
             }
             else if ((*m_personArray[iii][bbb]).canSeeSam()) // If they can see Sam...
             {
-              //  std::cout << "\033[1;42m \033[0m";
                  empty_image.pixelColor(bbb,iii,Magick::Color("green"));
             }
             else
             {
                  empty_image.pixelColor(bbb,iii,Magick::Color("blue"));
             }
-            if (bbb == m_nWidth - 1) // If it's last in the row...
-            {
-                std::cout << std::endl;
-            }
         }
     }
- //   empty_image.zoom(Magick::Geometry(20*m_nWidth, 20*m_nLength));
     return empty_image;
 }
