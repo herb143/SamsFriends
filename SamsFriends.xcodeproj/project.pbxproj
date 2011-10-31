@@ -15,6 +15,7 @@
 		E1FCB6E6145DDA4900B311B1 /* gcdCalculation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1FCB6E5145DDA4900B311B1 /* gcdCalculation.cpp */; };
 		E1FCB6E9145DDAFE00B311B1 /* friendGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1FCB6E8145DDAFE00B311B1 /* friendGrid.cpp */; };
 		E1FCB6F0145DDB7500B311B1 /* personInGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1FCB6EF145DDB7500B311B1 /* personInGrid.cpp */; };
+		E1FCB700145E377800B311B1 /* libMagick++.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E1FCB6FF145E377800B311B1 /* libMagick++.5.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,7 @@
 		E1FCB6EA145DDB2100B311B1 /* friendGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = friendGrid.h; sourceTree = "<group>"; };
 		E1FCB6EF145DDB7500B311B1 /* personInGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = personInGrid.cpp; sourceTree = "<group>"; };
 		E1FCB6F1145DDB8C00B311B1 /* personInGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personInGrid.h; sourceTree = "<group>"; };
+		E1FCB6FF145E377800B311B1 /* libMagick++.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libMagick++.5.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1FCB700145E377800B311B1 /* libMagick++.5.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +92,7 @@
 				E1FCB6EA145DDB2100B311B1 /* friendGrid.h */,
 				E1FCB6E3145DDA4200B311B1 /* argFunctions.cpp */,
 				E1FCB6E1145DDA2D00B311B1 /* EuclideanLine.h */,
+				E1FCB6FF145E377800B311B1 /* libMagick++.5.dylib */,
 				E1FCB6E7145DDA4E00B311B1 /* gcdCalculation.h */,
 				E1FCB6DB145DDA1600B311B1 /* numberFunctions.h */,
 				E1FCB6DF145DDA2800B311B1 /* EuclideanLine.cpp */,
@@ -176,6 +180,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = /opt/local/include/ImageMagick;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -204,6 +209,12 @@
 		E1AE0C7E145DD90B00C5DB44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SamsFriends\"",
+				);
+				"OTHER_CPLUSPLUSFLAGS[arch=*]" = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -211,6 +222,11 @@
 		E1AE0C7F145DD90B00C5DB44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SamsFriends\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
