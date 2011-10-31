@@ -24,6 +24,6 @@ int main (int argc, const char * argv[])
     friendGrid myGrid = friendGrid();
     Magick::Image prettyPrinted = myGrid.prettyPrint();
     prettyPrinted.magick("png");
-    prettyPrinted.write("Output");
+    prettyPrinted.write("Output.png");
     return 0;
 }
